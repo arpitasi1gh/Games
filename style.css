@@ -1,0 +1,59 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+button {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #ddd;
+}
+
+@keyframes celebrate {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.5); color: rgb(21, 255, 0); }
+  100% { transform: scale(1); }
+}
+
+.win {
+  animation: celebrate 0.5s ease-in-out;
+}
+
+#result {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+/* Dark Mode */
+body.dark {
+  background: #222;
+  color: #eee;
+}
+
+/* Emoji Mode */
+body.emoji button {
+  font-size: 2rem;
+}
+
+/* Meme Mode */
+body.meme {
+  background: url("funny-meme.jpg");
+  background-size: cover;
+}
+
+/* Center meme image and make it responsive */
+#meme {
+  display: none; /* default hidden; JS will show it */
+  margin: 16px auto; /* center horizontally */
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}

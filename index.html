@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper & Scissors Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Rock Paper & Scissors Game</h1>
+
+  <!-- Section for player choices -->
+  <div id="choices">
+    <button id="rock" class="choice-button">Rock</button>
+    <button id="paper" class="choice-button">Paper</button>
+    <button id="scissors" class="choice-button">Scissors</button>
+  </div>
+
+  <!-- Section for result message -->
+  <div id="result">Result will appear here</div>
+
+<div id="player-choice"></div>
+<div id="computer-choice"></div><br>
+
+  <!-- Section for scores -->
+  <div id="score">
+    <div id="streak">Current Streak: 0</div>
+    <div id="best-streak">Best Streak: 0</div>
+  </div>
+<br>
+  <!-- Settings for difficulty and theme -->
+  <div id="settings">
+    <label for="difficulty">AI Difficulty:</label>
+    <select id="difficulty">
+      <option value="easy">Easy</option>
+      <option value="normal">Normal</option>
+      <option value="hard">Hard</option>
+    </select>
+  </div> <br>
+  <div id="themes">
+    <label for="themes">Themes:</label>
+    <select id="theme">
+    <option value="light">Light</option>
+      <option value="dark">Dark</option>
+    </select>
+  </div>
+  <div id="checks">
+    <input type="checkbox" id="emoji-toggle" value="emoji">
+    <label for="emoji-toggle">Emoji</label>
+    <input type="checkbox" id="meme-toggle" value="meme">
+    <label for="meme-toggle">Meme</label>
+
+  </div>
+  <div id="meme-display">
+    <img id="meme" src="" alt="Meme">
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
