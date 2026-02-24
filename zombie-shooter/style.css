@@ -1,0 +1,31 @@
+/* full-page layout */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: white; /* white background as you requested */
+}
+
+/* canvas sits under everything */
+#gameCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: 1;
+}
+
+/* zombie images float above the canvas and remain animated */
+.zombie {
+  position: absolute;
+  pointer-events: none;
+  z-index: 2;
+  will-change: transform, left, top;
+  user-select: none;
+}
+
+/* small helper: fallback font for UI drawn on canvas */
+@media (prefers-reduced-motion) {
+  /* If user requests reduced motion, spawn slower */
+}
