@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background: #f0f0f0;
+}
+
+h1 {
+    color: #333;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    margin: 30px auto;
+    width: fit-content;
+    background: #ddd;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background: white;
+    border: 2px solid #333;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.cell:hover {
+    background: #e8f5e9;
+    transform: scale(1.05);
+}
+
+.cell.win {
+    background: #4caf50;
+    color: white;
+}
+
+.cell.lose {
+    background: #f44336;
+    color: white;
+}
+
+#reset-btn, #rematch-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 4px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background: #a8d8ff;
+    color: rgb(0, 0, 0);
+    border: 1px solid #333;
+    cursor: pointer;
+}
+
+#reset-btn:hover, #rematch-btn:hover {
+    transform: scale(1.05);
+}
+
+#reset-btn:active, #rematch-btn:active {
+    background: #90caff;
+}
+
+#message {
+    font-size: 20px;
+    margin: 10px;
+    font-weight: bold;
+    /* animation: celebrate 0.5s ease-in-out; */
+   }
+
+/* @keyframes celebrate {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.5); color: rgb(21, 255, 0); }
+  100% { transform: scale(1); }
+} */
