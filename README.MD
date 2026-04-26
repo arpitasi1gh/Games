@@ -1,11 +1,13 @@
 <div align="center">
 
-**Deployed Link 🔗:**
-<br>
-[Live Demo](https://rock-paper-scissors-dusky-phi.vercel.app/)
+**Deployed Links 🔗:**
 <br><br>
+[Live Demo For Rock-Paper-Scissors](https://rock-paper-scissors-dusky-phi.vercel.app/)
+<br><br>
+[Live Demo For Zombies-Shooter](https://games-zombies-shooter.vercel.app/)
+<br><br><br>
 **Tech Stacks Used:**
-<br>
+<br><br>
 Basic HTML5, CSS3 and JavaScript
 <br><br>
 ![HTML5](https://img.shields.io/badge/HTML5-orange?logo=html5)
